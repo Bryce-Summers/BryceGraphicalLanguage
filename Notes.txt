@@ -1,0 +1,84 @@
+It would be nice to have syntactic support for Bryce Numbers objects.
+
+Primitive Node values types will include ints and Strings.
+
+int + int --> int
+int + String = String;
+String + int = String;
+
+
+Add an svg export button.
+Whiteline - black line trick.
+Cursor.
+
+I have implemented basic assignment:
+a = b // a points to what b points to.
+a.b.a.s = s
+a = &b // Has a point to b.
+a -> b  (<==>)  a = &b
+
+
+// TODO : 
+
+
+// Integer Operations
+a += b;
+a -= b;
+a *= b;
+a /= b;
+// Advanced.
+a = a*a + b*b
+
+// Conditional Operations.
+a < b
+b > c
+
+// IF statements.
+if [conditional]
+[Code]
+end
+
+// For Loops.
+for
+[initialization assignment]
+[conditional]
+[iteration assignment]
+end
+[code]
+end
+
+//----------
+
+Functions: They are defined when the processor first crosses the definition line. The processor will then move to the line past the end.
+
+When functions are defined, the processor must store an integer value representing where the function begins.
+
+//----------
+
+
+// Functions.
+def [function_name]
+arg1
+arg2
+arg3
+end
+[code]
+return A
+end
+
+
+// Control Flow.
+break
+continue
+return A
+
+
+// Trunary operators.
+(a+b)+(b) whill probably break. I need to make sure that '(' and ')' get separated from other syntactic symbols.
+
+
+
+// ---- Graph Visualization:
+Upgrade the representation of the graphs to allow for arcing self loops, directed edges that do totally overlap each other and undirected edges.
+
+
